@@ -10,7 +10,7 @@ website:
         href: https://aliceheiman.xyz
     right:
       - text: "Resources"
-        href: resourses.qmd
+        href: resources.qmd
       - icon: github
         href: https://github.com/
 
