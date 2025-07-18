@@ -1,0 +1,15 @@
+---
+title: "Resources"
+page-layout: full
+title-block-banner: true
+---
+
+Here are some of my favorite resources for those interested in AI for human and planetary health.
+
+## Organizations
+
+* [Climate Change AI](https://www.climatechange.ai/): A non-profit and community committed to tackling climate change through machine learning. They host workshops, online happy hours, a community forum, and call for workshop papers at large AI conferences such as ICLR. 
+
+## Podcasts
+
+* [Outrage and Optimism](https://www.outrageandoptimism.org/): By Christiana Figueres and Tom Rivett-Carnac (oversaw the Paris Agreement), and Paul Dickinson (CDP founder) covering topics mainly in policy for a sustainable world.

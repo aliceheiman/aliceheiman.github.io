@@ -1,0 +1,33 @@
+---
+title: "Welcome! Coding for Human and Planetary Health"
+author: "Alice Heiman"
+date: "2025-07-17"
+image: "ian-wetherill-2mSN0-JaotU-unsplash.jpg"
+categories: [Article]
+---
+
+Hey Friends!
+
+I invite you on a journey to explore the exciting intersection of **coding for human and planetary health**.
+
+On this site, you will find 
+
+* **Technical deepdives**: Dive into Machine Learning (ML) and Artificial Intelligence (AI) methods applied to everything from forest health prediction to MRI analysis.
+
+* **Book Notes**: Get notes and summaries of key books and papers in AI+Nature+Health.
+
+* **Updates**: Stay up to date with exciting research, initiatives, and projects in AI for human and planetary health.
+
+All of this is to explore the questions **how can we practically use coding for sustainable development, while minimizing the negative social and environmental impacts of AI?**
+
+Excited to learn more?
+
+Check out the [Resources](/resources.html) and the [Latest Articles](/).
+
+Take care!
+
+---
+
+### References
+
+Cover Photo by <a href="https://unsplash.com/@leuconoid?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ian Wetherill</a> on <a href="https://unsplash.com/photos/a-body-of-water-surrounded-by-a-forest-2mSN0-JaotU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
