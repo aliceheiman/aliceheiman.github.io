@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Alice Heiman">
+<meta name="dcterms.date" content="2025-07-28">
 
-<title>Latest Articles – Articles</title>
+<title>Precision vs.&nbsp;Recall vs.&nbsp;Accuracy: Finally Memorize the Difference – Articles</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,35 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -129,7 +100,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -139,7 +110,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Articles</span>
     </a>
   </div>
@@ -156,7 +127,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html"> 
+    <a class="nav-link" href="../resources.html"> 
 <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item compact">
@@ -174,102 +145,170 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Latest Articles</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Precision vs.&nbsp;Recall vs.&nbsp;Accuracy: Finally Memorize the Difference</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Article</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Alice Heiman </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 28, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="QXJ0aWNsZQ==">Article <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-confusion-matrix" id="toc-the-confusion-matrix" class="nav-link active" data-scroll-target="#the-confusion-matrix">🤔 The Confusion Matrix</a></li>
+  <li><a href="#recall-the-producers-accuracy" id="toc-recall-the-producers-accuracy" class="nav-link" data-scroll-target="#recall-the-producers-accuracy">🏗️ Recall: The Producer’s Accuracy</a></li>
+  <li><a href="#precision-the-users-accuracy" id="toc-precision-the-users-accuracy" class="nav-link" data-scroll-target="#precision-the-users-accuracy">🔎 Precision: The User’s Accuracy</a></li>
+  <li><a href="#accuracy-total-assessment" id="toc-accuracy-total-assessment" class="nav-link" data-scroll-target="#accuracy-total-assessment">⚙️ Accuracy: Total Assessment</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">📝 Summary</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">🗃️ References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="QXJ0aWNsZQ==" data-listing-date-sort="1753686000000" data-listing-file-modified-sort="1753775082068" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="641">
-<div class="thumbnail"><a href="./posts/precision_vs_recall.html" class="no-external">
-
-<img loading="lazy" src="./posts/precision_vs_recall/summary.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/precision_vs_recall.html" class="no-external">Precision vs.&nbsp;Recall vs.&nbsp;Accuracy: Finally Memorize the Difference</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0aWNsZQ=='); return false;">Article</div>
-
+<p>I cannot count the number of times I’ve had to Google the formulas for <em>Precision</em> and <em>Recall</em>, <strong>until I found an explanation that changed everything</strong>.</p>
+<p>The explanation that made it click for me comes from the book <a href="https://docs.google.com/document/d/1UCB900oCdJERca-2WUeDlCu52MjPKJxETJ_jJcLM0bM/edit?tab=t.0">Cloud-Based Remote Sensing with Google Earth Engine</a> (Nicolau et al., 2023). Hopefully, this explanation will also be helpful to you.</p>
+<p>Here’s what we will build up to:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/summary.png" class="img-fluid figure-img"></p>
+<figcaption>Precision vs.&nbsp;Recall vs.&nbsp;Accuracy</figcaption>
+</figure>
 </div>
-<div class="delink listing-description"><a href="./posts/precision_vs_recall.html" class="no-external">
-I cannot count the number of times I’ve had to Google the formulas for <em>Precision</em> and <em>Recall</em>, <strong>until I found an explanation that changed everything</strong>.
-</a></div>
+<section id="the-confusion-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="the-confusion-matrix">🤔 The Confusion Matrix</h2>
+<p>Recall and precision are key metrics for evaluating <strong>classification</strong> models.</p>
+<p>Let’s say we have a grid of pixels we want a model to classify as (P)lant or (N)on-Vegetated area (our “Positive” and “Negative” classes). We will have <strong>actual</strong> (real-world) and <strong>predicted</strong> (model-classified) classifications. People often divide the predictions as follows:</p>
+<ul>
+<li><p><strong>True Positive (TP)</strong>: These are <strong>predicted positivies</strong> that are indeed <strong>actual positivies</strong></p></li>
+<li><p><strong>True Negative (TN)</strong>: These are <strong>predicted negatives</strong> that are indeed <strong>actual negatives</strong></p></li>
+<li><p><strong>False Positive (FP)</strong>: These are <strong>predicted positivies</strong> that are indeed <strong>actual negatives</strong>. They are not positives, although the model thought so!</p></li>
+<li><p><strong>False Negative (FN)</strong>: These are <strong>predicted negatives</strong> that are indeed <strong>actual positives</strong>. They are not negatives, although the model thought so!</p></li>
+</ul>
+<p>We can summarize these combinations in a <strong>confusion matrix</strong>, like so:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/confusion-matrix.png" class="img-fluid figure-img"></p>
+<figcaption>A Confusion Matrix</figcaption>
+</figure>
 </div>
-<div class="metadata">
-<a href="./posts/precision_vs_recall.html" class="no-external">
-<div class="listing-date">
-Jul 28, 2025
+<p><strong>Now we can understand recall and precision.</strong></p>
+</section>
+<section id="recall-the-producers-accuracy" class="level2">
+<h2 class="anchored" data-anchor-id="recall-the-producers-accuracy">🏗️ Recall: The Producer’s Accuracy</h2>
+<p><strong>Recall is the producer’s accuracy.</strong>.</p>
+<p>Think of you creating a map of (P)lants and (N)on-vegetated areas. The recall for the (P)lant class is how many plants you can produce. This is just the number of correct (P)lants divided by all (P)lants. The correct number of plants is simply our true positive (TP) count. The total number of plants is the sum of the ones we classified correctly (TP) and the plants we wrongly misclassified, i.e., the false negative (FN) count.</p>
+<p><span class="math display">\[\text{Recall (P)} = \frac{\text{TP}}{\text{TP + FN}}\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/recall.png" class="img-fluid figure-img"></p>
+<figcaption>Recall</figcaption>
+</figure>
 </div>
-<div class="listing-author">
-Alice Heiman
+<p>Think of it this way: there is some pool of actual positive pixels out there. When we are producing a map, we want to correctly classify (or recall) as many of those pixels as possible.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/recall-example.png" class="img-fluid figure-img"></p>
+<figcaption>An Example of Recall</figcaption>
+</figure>
 </div>
-</a>
+</section>
+<section id="precision-the-users-accuracy" class="level2">
+<h2 class="anchored" data-anchor-id="precision-the-users-accuracy">🔎 Precision: The User’s Accuracy</h2>
+<p><strong>Precision is the user’s accuracy.</strong>.</p>
+<p>Now that the prediction map is complete, we are interested in the validity of the information <strong>as users of it</strong>. If the map says that this pixel is a (P)lant, how confident am I <strong>as a user</strong> that it is actually a plant?</p>
+<p>Therefore, we are interested in knowing the number of pixels correctly classified divided by the total number of pixels claimed to be in that class.</p>
+<p><span class="math display">\[\text{Precision (P)} = \frac{\text{TP}}{\text{TP + FP}}\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/precision.png" class="img-fluid figure-img"></p>
+<figcaption>Precision</figcaption>
+</figure>
 </div>
+<p>Think of it this way: the model claims that some pool of pixels is plants. However, you know that the model may have incorrectly labeled some pixels. So you want to know how much you can trust the plant pixel candidates.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/precision-example.png" class="img-fluid figure-img"></p>
+<figcaption>An Example of Precision</figcaption>
+</figure>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="QXJ0aWNsZQ==" data-listing-date-sort="1752735600000" data-listing-file-modified-sort="1752855480067" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
-<div class="thumbnail"><a href="./posts/welcome/index.html" class="no-external">
+</section>
+<section id="accuracy-total-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="accuracy-total-assessment">⚙️ Accuracy: Total Assessment</h2>
+<p>Now, the original accuracy is the number of correctly classified pixels (both positive and negative) divided by the total number of pixels.</p>
+<p><span class="math display">\[\text{Accuracy} = \frac{\text{TP + TN}}{\text{TP + FP + TN + FN}} = \frac{\text{TP + TN}}{\text{Total}}\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/accuracy.png" class="img-fluid figure-img"></p>
+<figcaption>Accuracy</figcaption>
+</figure>
+</div>
+<p>This is a general metric, but it may not provide insights into class imbalances.</p>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">📝 Summary</h2>
+<p>So there we have it: precision, recall, and accuracy.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="precision_vs_recall/summary.png" class="img-fluid figure-img"></p>
+<figcaption>Precision vs.&nbsp;Recall vs.&nbsp;Accuracy</figcaption>
+</figure>
+</div>
+<p>Hopefully, you now have a better understanding of these terms. Perfect recall implies that you, as a producer, can correctly label every single positive class pixel. However, this doesn’t necessarily make users happy if the model labels everything as the positive class.</p>
+<p>Different applications will require varying degrees of attentiveness to precision and recall. Applications where a misclassification could be lethal benefit from high precision standards. However, if it is costly to miss even a single instance, you might be more interested in recall.</p>
+<p>Thank you for reading!</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">🗃️ References</h2>
+<p>Nicolau, A. P., Dyson, K., Saah, D., &amp; Clinton, N. (2023). Accuracy Assessment: Quantifying Classification Quality. In J. Cardille, M. Crowley, D. Saah, &amp; N. Clinton (Eds.), Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications (pp.&nbsp;135–145). SpringerOpen</p>
 
-<img loading="lazy" src="./posts/welcome/ian-wetherill-2mSN0-JaotU-unsplash.jpg" class="thumbnail-image">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">Welcome! Coding for Human and Planetary Health</a>
-</h3>
-<div class="listing-categories">
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('QXJ0aWNsZQ=='); return false;">Article</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/welcome/index.html" class="no-external">
-Hey Friends!
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jul 17, 2025
-</div>
-<div class="listing-author">
-Alice Heiman
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{heiman2025,
+  author = {Heiman, Alice},
+  title = {Precision Vs. {Recall} Vs. {Accuracy:} {Finally} {Memorize}
+    the {Difference}},
+  date = {2025-07-28},
+  url = {https://aliceheiman.github.io},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-heiman2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Heiman, Alice. 2025. <span>“Precision Vs. Recall Vs. Accuracy: Finally
+Memorize the Difference.”</span> July 28, 2025. <a href="https://aliceheiman.github.io">https://aliceheiman.github.io</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -21,6 +21,55 @@
     "text": "Podcasts\n\nOutrage and Optimism: By Christiana Figueres and Tom Rivett-Carnac (oversaw the Paris Agreement), and Paul Dickinson (CDP founder) covering topics mainly in policy for a sustainable world."
   },
   {
+    "objectID": "posts/precision_vs_recall.html",
+    "href": "posts/precision_vs_recall.html",
+    "title": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference",
+    "section": "",
+    "text": "I cannot count the number of times I’ve had to Google the formulas for Precision and Recall, until I found an explanation that changed everything.\nThe explanation that made it click for me comes from the book Cloud-Based Remote Sensing with Google Earth Engine (Nicolau et al., 2023). Hopefully, this explanation will also be helpful to you.\nHere’s what we will build up to:"
+  },
+  {
+    "objectID": "posts/precision_vs_recall.html#the-confusion-matrix",
+    "href": "posts/precision_vs_recall.html#the-confusion-matrix",
+    "title": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference",
+    "section": "🤔 The Confusion Matrix",
+    "text": "🤔 The Confusion Matrix\nRecall and precision are key metrics for evaluating classification models.\nLet’s say we have a grid of pixels we want a model to classify as (P)lant or (N)on-Vegetated area (our “Positive” and “Negative” classes). We will have actual (real-world) and predicted (model-classified) classifications. People often divide the predictions as follows:\n\nTrue Positive (TP): These are predicted positivies that are indeed actual positivies\nTrue Negative (TN): These are predicted negatives that are indeed actual negatives\nFalse Positive (FP): These are predicted positivies that are indeed actual negatives. They are not positives, although the model thought so!\nFalse Negative (FN): These are predicted negatives that are indeed actual positives. They are not negatives, although the model thought so!\n\nWe can summarize these combinations in a confusion matrix, like so:\n\n\n\nA Confusion Matrix\n\n\nNow we can understand recall and precision."
+  },
+  {
+    "objectID": "posts/precision_vs_recall.html#recall-the-producers-accuracy",
+    "href": "posts/precision_vs_recall.html#recall-the-producers-accuracy",
+    "title": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference",
+    "section": "🏗️ Recall: The Producer’s Accuracy",
+    "text": "🏗️ Recall: The Producer’s Accuracy\nRecall is the producer’s accuracy..\nThink of you creating a map of (P)lants and (N)on-vegetated areas. The recall for the (P)lant class is how many plants you can produce. This is just the number of correct (P)lants divided by all (P)lants. The correct number of plants is simply our true positive (TP) count. The total number of plants is the sum of the ones we classified correctly (TP) and the plants we wrongly misclassified, i.e., the false negative (FN) count.\n\\[\\text{Recall (P)} = \\frac{\\text{TP}}{\\text{TP + FN}}\\]\n\n\n\nRecall\n\n\nThink of it this way: there is some pool of actual positive pixels out there. When we are producing a map, we want to correctly classify (or recall) as many of those pixels as possible.\n\n\n\nAn Example of Recall"
+  },
+  {
+    "objectID": "posts/precision_vs_recall.html#precision-the-users-accuracy",
+    "href": "posts/precision_vs_recall.html#precision-the-users-accuracy",
+    "title": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference",
+    "section": "🔎 Precision: The User’s Accuracy",
+    "text": "🔎 Precision: The User’s Accuracy\nPrecision is the user’s accuracy..\nNow that the prediction map is complete, we are interested in the validity of the information as users of it. If the map says that this pixel is a (P)lant, how confident am I as a user that it is actually a plant?\nTherefore, we are interested in knowing the number of pixels correctly classified divided by the total number of pixels claimed to be in that class.\n\\[\\text{Precision (P)} = \\frac{\\text{TP}}{\\text{TP + FP}}\\]\n\n\n\nPrecision\n\n\nThink of it this way: the model claims that some pool of pixels is plants. However, you know that the model may have incorrectly labeled some pixels. So you want to know how much you can trust the plant pixel candidates.\n\n\n\nAn Example of Precision"
+  },
+  {
+    "objectID": "posts/precision_vs_recall.html#accuracy-total-assessment",
+    "href": "posts/precision_vs_recall.html#accuracy-total-assessment",
+    "title": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference",
+    "section": "⚙️ Accuracy: Total Assessment",
+    "text": "⚙️ Accuracy: Total Assessment\nNow, the original accuracy is the number of correctly classified pixels (both positive and negative) divided by the total number of pixels.\n\\[\\text{Accuracy} = \\frac{\\text{TP + TN}}{\\text{TP + FP + TN + FN}} = \\frac{\\text{TP + TN}}{\\text{Total}}\\]\n\n\n\nAccuracy\n\n\nThis is a general metric, but it may not provide insights into class imbalances."
+  },
+  {
+    "objectID": "posts/precision_vs_recall.html#summary",
+    "href": "posts/precision_vs_recall.html#summary",
+    "title": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference",
+    "section": "📝 Summary",
+    "text": "📝 Summary\nSo there we have it: precision, recall, and accuracy.\n\n\n\nPrecision vs. Recall vs. Accuracy\n\n\nHopefully, you now have a better understanding of these terms. Perfect recall implies that you, as a producer, can correctly label every single positive class pixel. However, this doesn’t necessarily make users happy if the model labels everything as the positive class.\nDifferent applications will require varying degrees of attentiveness to precision and recall. Applications where a misclassification could be lethal benefit from high precision standards. However, if it is costly to miss even a single instance, you might be more interested in recall.\nThank you for reading!"
+  },
+  {
+    "objectID": "posts/precision_vs_recall.html#references",
+    "href": "posts/precision_vs_recall.html#references",
+    "title": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference",
+    "section": "🗃️ References",
+    "text": "🗃️ References\nNicolau, A. P., Dyson, K., Saah, D., & Clinton, N. (2023). Accuracy Assessment: Quantifying Classification Quality. In J. Cardille, M. Crowley, D. Saah, & N. Clinton (Eds.), Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications (pp. 135–145). SpringerOpen"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome! Coding for Human and Planetary Health",
@@ -32,6 +81,6 @@
     "href": "index.html",
     "title": "Latest Articles",
     "section": "",
-    "text": "Welcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
+    "text": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
   }
 ]

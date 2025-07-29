@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/precision_vs_recall.html",
       "/posts/welcome/index.html"
     ]
   }
