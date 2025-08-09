@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alice Heiman">
-<meta name="dcterms.date" content="2025-07-28">
+<meta name="dcterms.date" content="2025-08-09">
 
-<title>Precision vs.&nbsp;Recall vs.&nbsp;Accuracy: Finally Memorize the Difference – Articles</title>
+<title>AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings – Articles</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -146,7 +165,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Precision vs.&nbsp;Recall vs.&nbsp;Accuracy: Finally Memorize the Difference</h1>
+      <h1 class="title">AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Article</div>
               </div>
@@ -166,7 +185,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 28, 2025</p>
+        <p class="date">August 9, 2025</p>
       </div>
     </div>
     
@@ -182,12 +201,12 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-confusion-matrix" id="toc-the-confusion-matrix" class="nav-link active" data-scroll-target="#the-confusion-matrix">🤔 The Confusion Matrix</a></li>
-  <li><a href="#recall-the-producers-accuracy" id="toc-recall-the-producers-accuracy" class="nav-link" data-scroll-target="#recall-the-producers-accuracy">🏗️ Recall: The Producer’s Accuracy</a></li>
-  <li><a href="#precision-the-users-accuracy" id="toc-precision-the-users-accuracy" class="nav-link" data-scroll-target="#precision-the-users-accuracy">🔎 Precision: The User’s Accuracy</a></li>
-  <li><a href="#accuracy-total-assessment" id="toc-accuracy-total-assessment" class="nav-link" data-scroll-target="#accuracy-total-assessment">⚙️ Accuracy: Total Assessment</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">📝 Summary</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">🗃️ References</a></li>
+  <li><a href="#why-alphaearth" id="toc-why-alphaearth" class="nav-link active" data-scroll-target="#why-alphaearth">Why AlphaEarth?</a></li>
+  <li><a href="#what-are-satellite-embeddings" id="toc-what-are-satellite-embeddings" class="nav-link" data-scroll-target="#what-are-satellite-embeddings">What are Satellite Embeddings?</a></li>
+  <li><a href="#what-can-we-use-satellite-embeddings-for" id="toc-what-can-we-use-satellite-embeddings-for" class="nav-link" data-scroll-target="#what-can-we-use-satellite-embeddings-for">What can we use Satellite Embeddings for?</a></li>
+  <li><a href="#what-are-the-limitations" id="toc-what-are-the-limitations" class="nav-link" data-scroll-target="#what-are-the-limitations">What are the limitations?</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
     </div>
@@ -198,116 +217,141 @@ window.Quarto = {
 
 
 
-<p>I cannot count the number of times I’ve had to Google the formulas for <em>Precision</em> and <em>Recall</em>, <strong>until I found an explanation that changed everything</strong>.</p>
-<p>The explanation that made it click for me comes from the book <a href="https://docs.google.com/document/d/1UCB900oCdJERca-2WUeDlCu52MjPKJxETJ_jJcLM0bM/edit?tab=t.0">Cloud-Based Remote Sensing with Google Earth Engine</a> (Nicolau et al., 2023). Hopefully, this explanation will also be helpful to you.</p>
-<p>Here’s what we will build up to:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="precision_vs_recall/summary.png" class="img-fluid figure-img"></p>
-<figcaption>Precision vs.&nbsp;Recall vs.&nbsp;Accuracy</figcaption>
+<p><img src="alphaearth-intro/embedding-vis.png" class="img-fluid figure-img"></p>
+<figcaption>AlphaEarth Embeddings of a Point in Brazil, State of Mato Grosso</figcaption>
 </figure>
 </div>
-<section id="the-confusion-matrix" class="level2">
-<h2 class="anchored" data-anchor-id="the-confusion-matrix">🤔 The Confusion Matrix</h2>
-<p>Recall and precision are key metrics for evaluating <strong>classification</strong> models.</p>
-<p>Let’s say we have a grid of pixels we want a model to classify as (P)lant or (N)on-Vegetated area (our “Positive” and “Negative” classes). We will have <strong>actual</strong> (real-world) and <strong>predicted</strong> (model-classified) classifications. People often divide the predictions as follows:</p>
+<section id="why-alphaearth" class="level2">
+<h2 class="anchored" data-anchor-id="why-alphaearth">Why AlphaEarth?</h2>
+<p>For millenia, humans have stared into the night sky curious about space - but quite recently we’ve gotten the tools to look back onto the Earth.</p>
+<p>However, the amount of data has become a challenge. In the 1970’s, the Landsat 1-3 satelittes on-board storage capacity was 3.75 GB per orbit. Today, Landsat 7 and 8 collect 1,200 scenes, equivalent to 1 TB of data, every 24 hours<span class="citation" data-cites="mtaylorImagingLandsatScience2016"><sup><a href="#ref-mtaylorImagingLandsatScience2016" role="doc-biblioref">1</a></sup></span>, adding 3 TB of landsat products<span class="citation" data-cites="LandsatProjectStatistics2018"><sup><a href="#ref-LandsatProjectStatistics2018" role="doc-biblioref">2</a></sup></span>.</p>
+<p><strong>AlphaEarth Foundations is Google DeepMind’s latest geospatial foundational AI model trained to assimilate thousands of image bands</strong></p>
+<p>The model is trained on 3 billion individual image frames sampled from over 5 million locations globally<span class="citation" data-cites="earthAIpoweredPixelsIntroducing2025"><sup><a href="#ref-earthAIpoweredPixelsIntroducing2025" role="doc-biblioref">3</a></sup></span>. Some of the data bands include</p>
 <ul>
-<li><p><strong>True Positive (TP)</strong>: These are <strong>predicted positivies</strong> that are indeed <strong>actual positivies</strong></p></li>
-<li><p><strong>True Negative (TN)</strong>: These are <strong>predicted negatives</strong> that are indeed <strong>actual negatives</strong></p></li>
-<li><p><strong>False Positive (FP)</strong>: These are <strong>predicted positivies</strong> that are indeed <strong>actual negatives</strong>. They are not positives, although the model thought so!</p></li>
-<li><p><strong>False Negative (FN)</strong>: These are <strong>predicted negatives</strong> that are indeed <strong>actual positives</strong>. They are not negatives, although the model thought so!</p></li>
+<li>Optical and thermal imagery</li>
+<li>Radar data</li>
+<li>3D surface measurements</li>
+<li>Climate properties</li>
+<li>Gravity fields</li>
+<li>Geo-located descriptive text</li>
+<li>…and more</li>
 </ul>
-<p>We can summarize these combinations in a <strong>confusion matrix</strong>, like so:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="precision_vs_recall/confusion-matrix.png" class="img-fluid figure-img"></p>
-<figcaption>A Confusion Matrix</figcaption>
-</figure>
-</div>
-<p><strong>Now we can understand recall and precision.</strong></p>
+<p><strong>Through training, the model can compress all of this data into 64 numbers for each 10mx10m location, ready for downstream analysis.</strong></p>
+<p>The Google DeepMind team open released the <a href="https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_SATELLITE_EMBEDDING_V1_ANNUAL">Satellite Embedding V1 Dataset</a>, which contains annual 64-dimensional embeddings between 2017-2024 at a 10m resolution<span class="citation" data-cites="SatelliteEmbeddingV1"><sup><a href="#ref-SatelliteEmbeddingV1" role="doc-biblioref">4</a></sup></span>.</p>
 </section>
-<section id="recall-the-producers-accuracy" class="level2">
-<h2 class="anchored" data-anchor-id="recall-the-producers-accuracy">🏗️ Recall: The Producer’s Accuracy</h2>
-<p><strong>Recall is the producer’s accuracy.</strong>.</p>
-<p>Think of you creating a map of (P)lants and (N)on-vegetated areas. The recall for the (P)lant class is how many plants you can produce. This is just the number of correct (P)lants divided by all (P)lants. The correct number of plants is simply our true positive (TP) count. The total number of plants is the sum of the ones we classified correctly (TP) and the plants we wrongly misclassified, i.e., the false negative (FN) count.</p>
-<p><span class="math display">\[\text{Recall (P)} = \frac{\text{TP}}{\text{TP + FN}}\]</span></p>
+<section id="what-are-satellite-embeddings" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-satellite-embeddings">What are Satellite Embeddings?</h2>
+<p>In essence, the thousands of data bands are compressed into 64 bands that together is called a <strong>satellite embeddings</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="precision_vs_recall/recall.png" class="img-fluid figure-img"></p>
-<figcaption>Recall</figcaption>
+<p><img src="alphaearth-intro/square-64-gray-numbers.png" class="img-fluid figure-img"></p>
+<figcaption>The 64 bands of the satellite embedding visualized for a point in Brazil.</figcaption>
 </figure>
 </div>
-<p>Think of it this way: there is some pool of actual positive pixels out there. When we are producing a map, we want to correctly classify (or recall) as many of those pixels as possible.</p>
+<p>You can think of the embeddings as new <strong>satellite embedding coordinates</strong> that locates each point on Earth on a 64-dimensional sphere. These embeddings are constructed such that similar points (such as locations with solar panels) have embeddings pointing to locations close together on the sphere, while different points (such as solar panels vs.&nbsp;forest) have embeddings that point to different locations on the sphere.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="precision_vs_recall/recall-example.png" class="img-fluid figure-img"></p>
-<figcaption>An Example of Recall</figcaption>
+<p><video src="alphaearth-intro/SphereComparison.mp4" class="img-fluid" controls=""><a href="alphaearth-intro/SphereComparison.mp4">Video</a></video></p>
+<figcaption>Similar locations have satellite embeddings close together, while different locations have embeddings that point in different directions.</figcaption>
 </figure>
 </div>
-</section>
-<section id="precision-the-users-accuracy" class="level2">
-<h2 class="anchored" data-anchor-id="precision-the-users-accuracy">🔎 Precision: The User’s Accuracy</h2>
-<p><strong>Precision is the user’s accuracy.</strong>.</p>
-<p>Now that the prediction map is complete, we are interested in the validity of the information <strong>as users of it</strong>. If the map says that this pixel is a (P)lant, how confident am I <strong>as a user</strong> that it is actually a plant?</p>
-<p>Therefore, we are interested in knowing the number of pixels correctly classified divided by the total number of pixels claimed to be in that class.</p>
-<p><span class="math display">\[\text{Precision (P)} = \frac{\text{TP}}{\text{TP + FP}}\]</span></p>
+<p>What’s special is that the embeddings capture similarities and difference both across <strong>space and time</strong>.</p>
+<p>This means that it is possible to track changes in the same patch of land just by looking at the evolution of the embedding.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="precision_vs_recall/precision.png" class="img-fluid figure-img"></p>
-<figcaption>Precision</figcaption>
+<p><video src="alphaearth-intro/ArrowOnSphere.mp4" class="img-fluid" controls=""><a href="alphaearth-intro/ArrowOnSphere.mp4">Video</a></video></p>
+<figcaption>The same geographical point can get different satellite embeddings over time, making it possible to track changes over time.</figcaption>
 </figure>
 </div>
-<p>Think of it this way: the model claims that some pool of pixels is plants. However, you know that the model may have incorrectly labeled some pixels. So you want to know how much you can trust the plant pixel candidates.</p>
+<p>The indication of similarity between two spatio-temporal locations is then the <strong>angle between the satellite embedding coordinates</strong>.</p>
+<p>A popular similarity metric is the <strong>cosine similarity</strong> score, taking the cosine of the angle between the vectors.</p>
+<p><span class="math display">\[
+\cos(\theta) = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}||\mathbf{b}|}
+\]</span></p>
+<p>The embedding coordinates in the AlphaEarth Foundation Satellite Embeddings dataset have already been normalized to have <strong>unit length</strong> (a length of one). Therefore, the cosine similarity simplifies to just the dot product between the embedding vectors. This is very efficient to compute.</p>
+<p><span class="math display">\[
+\cos(\theta) = \mathbf{a} \cdot \mathbf{b}
+\]</span></p>
+<p>Visualizing the cosine similarity, it is possible to highlight areas that are either very similar or very different.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="precision_vs_recall/precision-example.png" class="img-fluid figure-img"></p>
-<figcaption>An Example of Precision</figcaption>
+<p><video src="alphaearth-intro/TwoArrowsOnSphere.mp4" class="img-fluid" controls=""><a href="alphaearth-intro/TwoArrowsOnSphere.mp4">Video</a></video></p>
+<figcaption>The dot product between two satellite embedding vector coordinates measures the similarity between them.</figcaption>
 </figure>
 </div>
 </section>
-<section id="accuracy-total-assessment" class="level2">
-<h2 class="anchored" data-anchor-id="accuracy-total-assessment">⚙️ Accuracy: Total Assessment</h2>
-<p>Now, the original accuracy is the number of correctly classified pixels (both positive and negative) divided by the total number of pixels.</p>
-<p><span class="math display">\[\text{Accuracy} = \frac{\text{TP + TN}}{\text{TP + FP + TN + FN}} = \frac{\text{TP + TN}}{\text{Total}}\]</span></p>
+<section id="what-can-we-use-satellite-embeddings-for" class="level2">
+<h2 class="anchored" data-anchor-id="what-can-we-use-satellite-embeddings-for">What can we use Satellite Embeddings for?</h2>
+<p>Since the satellite embeddings contain a combination of thousands of data layers, they contain very rich semantic information about the relationship between locations on Earth.</p>
+<p>In fact, AlphaEarth achieves state of the art results on many benchmarks, with the authors repororting on average 24% lower error rates compared to other models tested<span class="citation" data-cites="AlphaEarthFoundationsHelps2025"><sup><a href="#ref-AlphaEarthFoundationsHelps2025" role="doc-biblioref">5</a></sup></span>.</p>
+<p>Some downstream tasks highlighted by the authors include <strong>similarity search</strong>, <strong>unsupervised clustering</strong>, and <strong>supervised classification</strong><span class="citation" data-cites="earthAIpoweredPixelsIntroducing2025"><sup><a href="#ref-earthAIpoweredPixelsIntroducing2025" role="doc-biblioref">3</a></sup></span>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="precision_vs_recall/accuracy.png" class="img-fluid figure-img"></p>
-<figcaption>Accuracy</figcaption>
+<p><img src="alphaearth-intro/tasks.jpg" class="img-fluid figure-img"></p>
+<figcaption>AlphaEarth Foundations and the Satellite Embedding Dataset enable several downstream tasks, such as similarity search, unsupervised clustering, and supervised classification</figcaption>
 </figure>
 </div>
-<p>This is a general metric, but it may not provide insights into class imbalances.</p>
+<p>Moreover, what makes these embeddings so powerful is that they <strong>support continuous time</strong><span class="citation" data-cites="brownAlphaEarthFoundationsEmbedding2025"><sup><a href="#ref-brownAlphaEarthFoundationsEmbedding2025" role="doc-biblioref">6</a></sup></span>.</p>
+<p>Traditional data products are discrete in time due to satellite only passing over a patch of land at discrete points in time. But AlphaEarth is trained to interpolate between these.</p>
+<p><strong>These tasks can help with applications such as tracking deforestation and urban expansion, categorizing agricultural lands to aid in food security, and help model water resources.</strong></p>
 </section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">📝 Summary</h2>
-<p>So there we have it: precision, recall, and accuracy.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="precision_vs_recall/summary.png" class="img-fluid figure-img"></p>
-<figcaption>Precision vs.&nbsp;Recall vs.&nbsp;Accuracy</figcaption>
-</figure>
-</div>
-<p>Hopefully, you now have a better understanding of these terms. Perfect recall implies that you, as a producer, can correctly label every single positive class pixel. However, this doesn’t necessarily make users happy if the model labels everything as the positive class.</p>
-<p>Different applications will require varying degrees of attentiveness to precision and recall. Applications where a misclassification could be lethal benefit from high precision standards. However, if it is costly to miss even a single instance, you might be more interested in recall.</p>
-<p>Thank you for reading!</p>
+<section id="what-are-the-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-the-limitations">What are the limitations?</h2>
+<p>The Satellite Embedding dataset still has its fair share of limitations, including:</p>
+<ul>
+<li><strong>Less interpretable features</strong>: The new 64 bands don’t have a direct physical meaning. This means it can be hard to interpret predictions and feature importance.</li>
+<li><strong>Only 2017-2024</strong>: The V1 dataset only goes back to 2017, limiting studies going further back in time.</li>
+<li><strong>Mostly land-focused</strong>: Many original data sources have limited data over the ocean, also impacting the embeddings.</li>
+<li><strong>Limited coverage at the poles</strong>: The dataset also has limited quality around the poles.</li>
+</ul>
 </section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">🗃️ References</h2>
-<p>Nicolau, A. P., Dyson, K., Saah, D., &amp; Clinton, N. (2023). Accuracy Assessment: Quantifying Classification Quality. In J. Cardille, M. Crowley, D. Saah, &amp; N. Clinton (Eds.), Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications (pp.&nbsp;135–145). SpringerOpen</p>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<p>If you are curious to learn more, the Google DeepMind team has curated a <a href="https://developers.google.com/earth-engine/tutorials/community/satellite-embedding-01-introduction">collection of excellent resources and tutorials</a>.</p>
+<p>Moreover, the Google DeepMind team is <a href="https://forms.gle/DngGMyeZeqVGpRHLA">currenlty offering a series of small grants</a> to researchers using the Satellite Embedding dataset.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>The AlphaEarth Foundations geospatial foundation model marks a pivotal moment for geospatial analysis.</p>
+<p>I am very excited to explore the applications of this model!</p>
+<p>Take care! 🥳</p>
 
 
+
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{heiman2025,
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-mtaylorImagingLandsatScience2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1 </div><div class="csl-right-inline">Laura E.P. Rocchio and Jon Campbell. Imaging the <span>Past</span> <span></span> <span>Landsat Science</span>. 2016.</div>
+</div>
+<div id="ref-LandsatProjectStatistics2018" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2 </div><div class="csl-right-inline">Landsat <span>Project Statistics</span> <span></span> <span>U</span>.<span>S</span>. <span>Geological Survey</span>. 2018.</div>
+</div>
+<div id="ref-earthAIpoweredPixelsIntroducing2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3 </div><div class="csl-right-inline">Earth G. <span class="nocase">AI-powered</span> pixels: <span>Introducing Google</span>’s <span>Satellite Embedding</span> dataset. Google Earth and Earth Engine. 2025.</div>
+</div>
+<div id="ref-SatelliteEmbeddingV1" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4 </div><div class="csl-right-inline">Google Earth Engine Google DeepMind. Satellite <span>Embedding V1</span> <span></span> <span>Earth Engine Data Catalog</span>. Google for Developers. 2025.</div>
+</div>
+<div id="ref-AlphaEarthFoundationsHelps2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">5 </div><div class="csl-right-inline"><span>AlphaEarth Foundations</span> helps map our planet in unprecedented detail. Google DeepMind. 2025.</div>
+</div>
+<div id="ref-brownAlphaEarthFoundationsEmbedding2025" class="csl-entry" role="listitem">
+<div class="csl-left-margin">6 </div><div class="csl-right-inline">Brown CF, Kazmierski MR, Pasquarella VJ, Rucklidge WJ, Samsikova M, Zhang C <em>et al.</em> <span>AlphaEarth Foundations</span>: <span>An</span> embedding field model for accurate and efficient global mapping from sparse label data. 2025. doi:<a href="https://doi.org/10.48550/arXiv.2507.22291">10.48550/arXiv.2507.22291</a>.</div>
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{heiman2025,
   author = {Heiman, Alice},
-  title = {Precision Vs. {Recall} Vs. {Accuracy:} {Finally} {Memorize}
-    the {Difference}},
-  date = {2025-07-28},
-  url = {https://aliceheiman.github.io/posts/precision_vs_recall},
+  title = {AlphaEarth: {A} {Peek} into the {Potential} of {Geospatial}
+    {Satelitte} {Embeddings}},
+  date = {2025-08-09},
+  url = {https://aliceheiman.github.io/posts/alphaearth-intro},
   langid = {en}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-heiman2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Heiman, Alice. 2025. <span>“Precision Vs. Recall Vs. Accuracy: Finally
-Memorize the Difference.”</span> July 28, 2025. <a href="https://aliceheiman.github.io/posts/precision_vs_recall">https://aliceheiman.github.io/posts/precision_vs_recall</a>.
+<div class="">Heiman A. AlphaEarth: A Peek into the Potential
+of Geospatial Satelitte Embeddings. 2025.<a href="https://aliceheiman.github.io/posts/alphaearth-intro">https://aliceheiman.github.io/posts/alphaearth-intro</a>.</div>
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

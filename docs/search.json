@@ -70,6 +70,55 @@
     "text": "🗃️ References\nNicolau, A. P., Dyson, K., Saah, D., & Clinton, N. (2023). Accuracy Assessment: Quantifying Classification Quality. In J. Cardille, M. Crowley, D. Saah, & N. Clinton (Eds.), Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications (pp. 135–145). SpringerOpen"
   },
   {
+    "objectID": "posts/alphaearth-intro.html",
+    "href": "posts/alphaearth-intro.html",
+    "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
+    "section": "",
+    "text": "AlphaEarth Embeddings of a Point in Brazil, State of Mato Grosso"
+  },
+  {
+    "objectID": "posts/alphaearth-intro.html#why-alphaearth",
+    "href": "posts/alphaearth-intro.html#why-alphaearth",
+    "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
+    "section": "Why AlphaEarth?",
+    "text": "Why AlphaEarth?\nFor millenia, humans have stared into the night sky curious about space - but quite recently we’ve gotten the tools to look back onto the Earth.\nHowever, the amount of data has become a challenge. In the 1970’s, the Landsat 1-3 satelittes on-board storage capacity was 3.75 GB per orbit. Today, Landsat 7 and 8 collect 1,200 scenes, equivalent to 1 TB of data, every 24 hours1, adding 3 TB of landsat products2.\nAlphaEarth Foundations is Google DeepMind’s latest geospatial foundational AI model trained to assimilate thousands of image bands\nThe model is trained on 3 billion individual image frames sampled from over 5 million locations globally3. Some of the data bands include\n\nOptical and thermal imagery\nRadar data\n3D surface measurements\nClimate properties\nGravity fields\nGeo-located descriptive text\n…and more\n\nThrough training, the model can compress all of this data into 64 numbers for each 10mx10m location, ready for downstream analysis.\nThe Google DeepMind team open released the Satellite Embedding V1 Dataset, which contains annual 64-dimensional embeddings between 2017-2024 at a 10m resolution4."
+  },
+  {
+    "objectID": "posts/alphaearth-intro.html#what-are-satellite-embeddings",
+    "href": "posts/alphaearth-intro.html#what-are-satellite-embeddings",
+    "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
+    "section": "What are Satellite Embeddings?",
+    "text": "What are Satellite Embeddings?\nIn essence, the thousands of data bands are compressed into 64 bands that together is called a satellite embeddings.\n\n\n\nThe 64 bands of the satellite embedding visualized for a point in Brazil.\n\n\nYou can think of the embeddings as new satellite embedding coordinates that locates each point on Earth on a 64-dimensional sphere. These embeddings are constructed such that similar points (such as locations with solar panels) have embeddings pointing to locations close together on the sphere, while different points (such as solar panels vs. forest) have embeddings that point to different locations on the sphere.\n\n\nVideo\nSimilar locations have satellite embeddings close together, while different locations have embeddings that point in different directions.\n\n\nWhat’s special is that the embeddings capture similarities and difference both across space and time.\nThis means that it is possible to track changes in the same patch of land just by looking at the evolution of the embedding.\n\n\nVideo\nThe same geographical point can get different satellite embeddings over time, making it possible to track changes over time.\n\n\nThe indication of similarity between two spatio-temporal locations is then the angle between the satellite embedding coordinates.\nA popular similarity metric is the cosine similarity score, taking the cosine of the angle between the vectors.\n\\[\n\\cos(\\theta) = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|}\n\\]\nThe embedding coordinates in the AlphaEarth Foundation Satellite Embeddings dataset have already been normalized to have unit length (a length of one). Therefore, the cosine similarity simplifies to just the dot product between the embedding vectors. This is very efficient to compute.\n\\[\n\\cos(\\theta) = \\mathbf{a} \\cdot \\mathbf{b}\n\\]\nVisualizing the cosine similarity, it is possible to highlight areas that are either very similar or very different.\n\n\nVideo\nThe dot product between two satellite embedding vector coordinates measures the similarity between them."
+  },
+  {
+    "objectID": "posts/alphaearth-intro.html#what-can-we-use-satellite-embeddings-for",
+    "href": "posts/alphaearth-intro.html#what-can-we-use-satellite-embeddings-for",
+    "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
+    "section": "What can we use Satellite Embeddings for?",
+    "text": "What can we use Satellite Embeddings for?\nSince the satellite embeddings contain a combination of thousands of data layers, they contain very rich semantic information about the relationship between locations on Earth.\nIn fact, AlphaEarth achieves state of the art results on many benchmarks, with the authors repororting on average 24% lower error rates compared to other models tested5.\nSome downstream tasks highlighted by the authors include similarity search, unsupervised clustering, and supervised classification3.\n\n\n\nAlphaEarth Foundations and the Satellite Embedding Dataset enable several downstream tasks, such as similarity search, unsupervised clustering, and supervised classification\n\n\nMoreover, what makes these embeddings so powerful is that they support continuous time6.\nTraditional data products are discrete in time due to satellite only passing over a patch of land at discrete points in time. But AlphaEarth is trained to interpolate between these.\nThese tasks can help with applications such as tracking deforestation and urban expansion, categorizing agricultural lands to aid in food security, and help model water resources."
+  },
+  {
+    "objectID": "posts/alphaearth-intro.html#what-are-the-limitations",
+    "href": "posts/alphaearth-intro.html#what-are-the-limitations",
+    "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
+    "section": "What are the limitations?",
+    "text": "What are the limitations?\nThe Satellite Embedding dataset still has its fair share of limitations, including:\n\nLess interpretable features: The new 64 bands don’t have a direct physical meaning. This means it can be hard to interpret predictions and feature importance.\nOnly 2017-2024: The V1 dataset only goes back to 2017, limiting studies going further back in time.\nMostly land-focused: Many original data sources have limited data over the ocean, also impacting the embeddings.\nLimited coverage at the poles: The dataset also has limited quality around the poles."
+  },
+  {
+    "objectID": "posts/alphaearth-intro.html#resources",
+    "href": "posts/alphaearth-intro.html#resources",
+    "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
+    "section": "Resources",
+    "text": "Resources\nIf you are curious to learn more, the Google DeepMind team has curated a collection of excellent resources and tutorials.\nMoreover, the Google DeepMind team is currenlty offering a series of small grants to researchers using the Satellite Embedding dataset."
+  },
+  {
+    "objectID": "posts/alphaearth-intro.html#conclusion",
+    "href": "posts/alphaearth-intro.html#conclusion",
+    "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe AlphaEarth Foundations geospatial foundation model marks a pivotal moment for geospatial analysis.\nI am very excited to explore the applications of this model!\nTake care! 🥳"
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome! Coding for Human and Planetary Health",
@@ -81,6 +130,6 @@
     "href": "index.html",
     "title": "Latest Articles",
     "section": "",
-    "text": "Precision vs. Recall vs. Accuracy: Finally Memorize the Difference\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
+    "text": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nAug 9, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nPrecision vs. Recall vs. Accuracy: Finally Memorize the Difference\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
   }
 ]
