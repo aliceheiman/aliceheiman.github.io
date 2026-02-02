@@ -8,7 +8,7 @@ categories: [Article]
 
 **Today, Artificial Intelligence (AI) is presented as either the definitive solution to the world's problems or the ultimate end of life on Earth.**
 
-We allow AIs'unchecked AI growth, arguing that *once we solve Intelligence, we'll solve everything else*. AI will be able to find cures to all diseases, predict earthquakes, and optimize our energy grids. Just bet everything on AI, and we'll have a world of guaranteed human flourishing.
+We allow AIs'unchecked growth, arguing that *once we solve Intelligence, we'll solve everything else*. AI will be able to find cures to all diseases, predict earthquakes, and optimize our energy grids. Just bet everything on AI, and we'll have a world of guaranteed human flourishing.
 
 But believing in only one of two outcomes, AI utopia (infinite human flourishing) or AI dystopia (complete human extinction), prevents us from taking action on the matters we must address today.
 
