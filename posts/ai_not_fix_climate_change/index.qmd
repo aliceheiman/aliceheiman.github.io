@@ -1,0 +1,65 @@
+---
+title: "Don’t Wait for AI to “Fix” the Climate Crisis"
+author: "Alice Heiman"
+date: "2026-02-01"
+image: "logan-voss-bHd7tm-2oWU-unsplash.jpg"
+categories: [Article]
+---
+
+**Today, Artificial Intelligence (AI) is presented as either the definitive solution to the world's problems or the ultimate end of life on Earth.**
+
+We allow AIs'unchecked AI growth, arguing that *once we solve Intelligence, we'll solve everything else*. AI will be able to find cures to all diseases, predict earthquakes, and optimize our energy grids. Just bet everything on AI, and we'll have a world of guaranteed human flourishing.
+
+But believing in only one of two outcomes, AI utopia (infinite human flourishing) or AI dystopia (complete human extinction), prevents us from taking action on the matters we must address today.
+
+!["Our goal is to do better than this!" - Professor Rob Reich, Associate Director, Institute for Human-Centered Artificial Intelligence, from Stanford University's CS182: Ethics, Public Policy, and Technological Change.](ai-chart.png)
+
+**The utopia-dystopia debate is especially dangerous for climate solutions**, where the promises of future technology to fix our historical mistakes stand in the way of taking the actions we desperately need today.
+
+Although I strongly believe AI can play a crucial role in the transition to a greener planet, in this article, I argue why we cannot bet on AI alone to solve climate change.
+
+## Believing in AI fixes is too software-centric
+
+**Unlike software innovations, hardware and infrastructure changes take decades, not days.**
+
+Especially for climate solutions, pure software solutions tend to forget physical reality. AI can help at many stages of a hardware solution's life cycle. From developing carbon-neutral materials, finding optimal power plant locations, optimizing drifting, and predicting maintenance schedules and failure modes. But you still don't get away from the complicated logistics of physical and interconnected systems.
+
+Let's say you suddenly had the recipe for a hyper-efficient nuclear reactor. Even then, it would still take decades to develop the infrastructure and expertise to deploy, integrate, operate, and service the system. Unlike a vibe-coded website, transforming energy systems, rolling out universal vaccination programs, and ensuring equitable access to quality education cannot be done in hours, or even months. These challenges leave no room for waiting on perfect solutions. Action is already long overdue.
+
+**The best projects are often the ones that actually get done**. Endless optimization means little without public and political will, sustained financing, and effective implementation. Without those, even the most powerful models and predictions never get realized.
+
+## We repeatedly overestimate our ability to develop meaningful AI
+
+Some thought machine intelligence would be solved 70 years ago, in one single summer. 
+
+Known as the [1956 Dartmouth summer project](https://ojs.aaai.org/aimagazine/index.php/aimagazine/article/view/1904), John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon famously proposed that “every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it. [...] We think that a significant advance can be made in one or more of these problems if a carefully selected group of scientists work on it together for a summer.” 
+
+Now, 70 years later, we have still not "solved" Intelligence, whatever that means.
+
+Rather, we are debating and constraining the definition of Intelligence to move the goalposts closer in the competition to reach Artificial General Intelligence (AGI) first. But, more importantly for climate change, regardless of the definition, what is the path from Intelligence to real-world progress in human and planetary development?
+
+Here, I wish companies focused less on beating benchmarks and more on demonstrating real intent to address the world’s biggest challenges, by allocating budgets and investment toward climate change, agriculture, education, and health.
+
+## We don't need AI to take action
+
+By trusting a future AI system more than our current understanding, we are undermining the hard-earned wealth of knowledge and experience of indigenous communities and environmental scientists.
+
+We already have innovations and a roadmap for what needs to be done to combat climate change, including transforming our energy systems from fossil fuels to renewables and nuclear power, increasing crop yields, eating less meat, and stopping deforestation. Often, the main bottleneck is not the need for better technology but rather the need to roll out existing solutions on a larger scale.
+
+In the age of AI, it’s easy to forget how innovative the human mind can be. Long before the AI boom, we put a person on the Moon, cured once-fatal diseases with antibiotics, and built transportation and energy systems that connected the world. With the same collective determination, we can achieve equally transformative breakthroughs in addressing climate change.
+
+## Conclusion
+
+Artificial Intelligence can undoubtedly have a large positive impact on our transition towards a more sustainable world. 
+
+But believing that this technology will be able to fix climate change and reverse our historical damages is outright dangerous because it hinders us from taking long-overdue action, putting more people at risk every day.
+
+So don't wait for AI to fix the climate.
+
+Embrace what new technology provides as an addition, not a replacement. We already know what we need to get started.
+
+## References
+
+Cover photo by [Logan Voss](https://unsplash.com/@loganvoss?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/abstract-streaks-of-neon-green-light-on-dark-background-bHd7tm-2oWU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+AI Utopia / Dystopia Graph from [CS182 Lecture Slides 1](https://web.stanford.edu/class/cs182/lectures/Lecture1.pdf), accessed February 01, 2026.

@@ -70,6 +70,13 @@
     "text": "🗃️ References\nNicolau, A. P., Dyson, K., Saah, D., & Clinton, N. (2023). Accuracy Assessment: Quantifying Classification Quality. In J. Cardille, M. Crowley, D. Saah, & N. Clinton (Eds.), Cloud-Based Remote Sensing with Google Earth Engine: Fundamentals and Applications (pp. 135–145). SpringerOpen"
   },
   {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome! Coding for Human and Planetary Health",
+    "section": "",
+    "text": "Hey Friends!\nI invite you on a journey to explore the exciting intersection of coding for human and planetary health.\nOn this site, you will find\n\nTechnical deepdives: Dive into Machine Learning (ML) and Artificial Intelligence (AI) methods applied to everything from forest health prediction to MRI analysis.\nBook Notes: Get notes and summaries of key books and papers in AI+Nature+Health.\nUpdates: Stay up to date with exciting research, initiatives, and projects in AI for human and planetary health.\n\nAll of this is to explore the questions how can we practically use coding for sustainable development, while minimizing the negative social and environmental impacts of AI?\nExcited to learn more?\nCheck out the Resources and the Latest Articles.\nTake care!\n\n\nReferences\nCover Photo by Ian Wetherill on Unsplash"
+  },
+  {
     "objectID": "posts/alphaearth-intro.html",
     "href": "posts/alphaearth-intro.html",
     "title": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings",
@@ -119,17 +126,52 @@
     "text": "Conclusion\nThe AlphaEarth Foundations geospatial foundation model marks a pivotal moment for geospatial analysis.\nI am very excited to explore the applications of this model!\nTake care! 🥳"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome! Coding for Human and Planetary Health",
+    "objectID": "posts/ai_not_fix_climate_change/index.html",
+    "href": "posts/ai_not_fix_climate_change/index.html",
+    "title": "Don’t Wait for AI to “Fix” the Climate Crisis",
     "section": "",
-    "text": "Hey Friends!\nI invite you on a journey to explore the exciting intersection of coding for human and planetary health.\nOn this site, you will find\n\nTechnical deepdives: Dive into Machine Learning (ML) and Artificial Intelligence (AI) methods applied to everything from forest health prediction to MRI analysis.\nBook Notes: Get notes and summaries of key books and papers in AI+Nature+Health.\nUpdates: Stay up to date with exciting research, initiatives, and projects in AI for human and planetary health.\n\nAll of this is to explore the questions how can we practically use coding for sustainable development, while minimizing the negative social and environmental impacts of AI?\nExcited to learn more?\nCheck out the Resources and the Latest Articles.\nTake care!\n\n\nReferences\nCover Photo by Ian Wetherill on Unsplash"
+    "text": "Today, Artificial Intelligence (AI) is presented as either the definitive solution to the world’s problems or the ultimate end of life on Earth.\nWe allow AIs’unchecked AI growth, arguing that once we solve Intelligence, we’ll solve everything else. AI will be able to find cures to all diseases, predict earthquakes, and optimize our energy grids. Just bet everything on AI, and we’ll have a world of guaranteed human flourishing.\nBut believing in only one of two outcomes, AI utopia (infinite human flourishing) or AI dystopia (complete human extinction), prevents us from taking action on the matters we must address today.\nThe utopia-dystopia debate is especially dangerous for climate solutions, where the promises of future technology to fix our historical mistakes stand in the way of taking the actions we desperately need today.\nAlthough I strongly believe AI can play a crucial role in the transition to a greener planet, in this article, I argue why we cannot bet on AI alone to solve climate change."
+  },
+  {
+    "objectID": "posts/ai_not_fix_climate_change/index.html#believing-in-ai-fixes-is-too-software-centric",
+    "href": "posts/ai_not_fix_climate_change/index.html#believing-in-ai-fixes-is-too-software-centric",
+    "title": "Don’t Wait for AI to “Fix” the Climate Crisis",
+    "section": "Believing in AI fixes is too software-centric",
+    "text": "Believing in AI fixes is too software-centric\nUnlike software innovations, hardware and infrastructure changes take decades, not days.\nEspecially for climate solutions, pure software solutions tend to forget physical reality. AI can help at many stages of a hardware solution’s life cycle. From developing carbon-neutral materials, finding optimal power plant locations, optimizing drifting, and predicting maintenance schedules and failure modes. But you still don’t get away from the complicated logistics of physical and interconnected systems.\nLet’s say you suddenly had the recipe for a hyper-efficient nuclear reactor. Even then, it would still take decades to develop the infrastructure and expertise to deploy, integrate, operate, and service the system. Unlike a vibe-coded website, transforming energy systems, rolling out universal vaccination programs, and ensuring equitable access to quality education cannot be done in hours, or even months. These challenges leave no room for waiting on perfect solutions. Action is already long overdue.\nThe best projects are often the ones that actually get done. Endless optimization means little without public and political will, sustained financing, and effective implementation. Without those, even the most powerful models and predictions never get realized."
+  },
+  {
+    "objectID": "posts/ai_not_fix_climate_change/index.html#we-repeatedly-overestimate-our-ability-to-develop-meaningful-ai",
+    "href": "posts/ai_not_fix_climate_change/index.html#we-repeatedly-overestimate-our-ability-to-develop-meaningful-ai",
+    "title": "Don’t Wait for AI to “Fix” the Climate Crisis",
+    "section": "We repeatedly overestimate our ability to develop meaningful AI",
+    "text": "We repeatedly overestimate our ability to develop meaningful AI\nSome thought machine intelligence would be solved 70 years ago, in one single summer.\nKnown as the 1956 Dartmouth summer project, John McCarthy, Marvin Minsky, Nathaniel Rochester, and Claude Shannon famously proposed that “every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it. […] We think that a significant advance can be made in one or more of these problems if a carefully selected group of scientists work on it together for a summer.”\nNow, 70 years later, we have still not “solved” Intelligence, whatever that means.\nRather, we are debating and constraining the definition of Intelligence to move the goalposts closer in the competition to reach Artificial General Intelligence (AGI) first. But, more importantly for climate change, regardless of the definition, what is the path from Intelligence to real-world progress in human and planetary development?\nHere, I wish companies focused less on beating benchmarks and more on demonstrating real intent to address the world’s biggest challenges, by allocating budgets and investment toward climate change, agriculture, education, and health."
+  },
+  {
+    "objectID": "posts/ai_not_fix_climate_change/index.html#we-dont-need-ai-to-take-action",
+    "href": "posts/ai_not_fix_climate_change/index.html#we-dont-need-ai-to-take-action",
+    "title": "Don’t Wait for AI to “Fix” the Climate Crisis",
+    "section": "We don’t need AI to take action",
+    "text": "We don’t need AI to take action\nBy trusting a future AI system more than our current understanding, we are undermining the hard-earned wealth of knowledge and experience of indigenous communities and environmental scientists.\nWe already have innovations and a roadmap for what needs to be done to combat climate change, including transforming our energy systems from fossil fuels to renewables and nuclear power, increasing crop yields, eating less meat, and stopping deforestation. Often, the main bottleneck is not the need for better technology but rather the need to roll out existing solutions on a larger scale.\nIn the age of AI, it’s easy to forget how innovative the human mind can be. Long before the AI boom, we put a person on the Moon, cured once-fatal diseases with antibiotics, and built transportation and energy systems that connected the world. With the same collective determination, we can achieve equally transformative breakthroughs in addressing climate change."
+  },
+  {
+    "objectID": "posts/ai_not_fix_climate_change/index.html#conclusion",
+    "href": "posts/ai_not_fix_climate_change/index.html#conclusion",
+    "title": "Don’t Wait for AI to “Fix” the Climate Crisis",
+    "section": "Conclusion",
+    "text": "Conclusion\nArtificial Intelligence can undoubtedly have a large positive impact on our transition towards a more sustainable world.\nBut believing that this technology will be able to fix climate change and reverse our historical damages is outright dangerous because it hinders us from taking long-overdue action, putting more people at risk every day.\nSo don’t wait for AI to fix the climate.\nEmbrace what new technology provides as an addition, not a replacement. We already know what we need to get started."
+  },
+  {
+    "objectID": "posts/ai_not_fix_climate_change/index.html#references",
+    "href": "posts/ai_not_fix_climate_change/index.html#references",
+    "title": "Don’t Wait for AI to “Fix” the Climate Crisis",
+    "section": "References",
+    "text": "References\nCover photo by Logan Voss on Unsplash\nAI Utopia / Dystopia Graph from CS182 Lecture Slides 1, accessed February 01, 2026."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Latest Articles",
     "section": "",
-    "text": "AlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nAug 9, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nPrecision vs. Recall vs. Accuracy: Finally Memorize the Difference\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
+    "text": "Don’t Wait for AI to “Fix” the Climate Crisis\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nFeb 1, 2026\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nAlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nAug 9, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nPrecision vs. Recall vs. Accuracy: Finally Memorize the Difference\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
   }
 ]
