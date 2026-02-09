@@ -10,13 +10,13 @@ Sustainability-focused open-source projects play a critical role in developing t
 
 At the same time, students and software developers are eager to make a meaningful impact, yet often lack clear entry points for contributing in small, traceable ways. While hackathons can foster innovation and community, they are frequently speculative and focused on demos rather than shipped code.
 
-This short post outlines a short, focused alternative.
+This short post outlines a focused alternative.
 
-:::note
+::: {.callout-note title="What is Plant a PR?"}
 “Plant a PR” is a short, collaborative sprint where participants contribute pull requests to sustainability-focused open-source projects.
 :::
 
-Similar to a mapathon, participants work individually or in small groups to complete clearly scoped issues in existing repositories. Projects can be sourced from https://climatetriage.com/ with clear “Good First Issues.”
+Similar to a mapathon, participants work individually or in small groups to complete clearly scoped issues in existing repositories. Projects can be sourced from [Climate Triage](https://climatetriage.com/) with clear “Good First Issues.”
 
 **One pull request (PR) = one tree planted in the digital world**
 
@@ -36,11 +36,11 @@ By contributing to established projects, participants create immediate, real-wor
 **Conclusion** (5 minutes)
 - Group wrap-up highlighting total pull requests submitted, reflections, and key learnings.
 
-## Conclusion
+## Looking Ahead
 
 The Plant-A-PR event format can be used to gather participants interested in the intersection of software and sustainability. Similar to tree planting initiatives, communities such as schools can establish leaderboards to motivate participants. 
 
 ## References
 
-[^1]: Cover photo by Wolfgang Hasselmann on Unsplash. Available at https://unsplash.com/photos/a-red-tree-in-the-middle-of-a-purple-field-3dyIfpZLHEA?utm_source=unsplash.
+- Cover photo by Wolfgang Hasselmann on Unsplash. Available at https://unsplash.com/photos/a-red-tree-in-the-middle-of-a-purple-field-3dyIfpZLHEA?utm_source=unsplash.
       
