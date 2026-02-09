@@ -126,6 +126,34 @@
     "text": "Conclusion\nThe AlphaEarth Foundations geospatial foundation model marks a pivotal moment for geospatial analysis.\nI am very excited to explore the applications of this model!\nTake care! 🥳"
   },
   {
+    "objectID": "posts/plant_a_pr/index.html",
+    "href": "posts/plant_a_pr/index.html",
+    "title": "Plant A PR: Open-Source Sprint for Sustainability",
+    "section": "",
+    "text": "Sustainability-focused open-source projects play a critical role in developing tools for human and planetary health, but many struggle to attract consistent contributors.\nAt the same time, students and software developers are eager to make a meaningful impact, yet often lack clear entry points for contributing in small, traceable ways. While hackathons can foster innovation and community, they are frequently speculative and focused on demos rather than shipped code.\nThis short post outlines a short, focused alternative.\nSimilar to a mapathon, participants work individually or in small groups to complete clearly scoped issues in existing repositories. Projects can be sourced from https://climatetriage.com/ with clear “Good First Issues.”\nOne pull request (PR) = one tree planted in the digital world\nBy contributing to established projects, participants create immediate, real-world impact while learning practical open-source collaboration skills."
+  },
+  {
+    "objectID": "posts/plant_a_pr/index.html#the-plant-a-pr-event-format",
+    "href": "posts/plant_a_pr/index.html#the-plant-a-pr-event-format",
+    "title": "Plant A PR: Open-Source Sprint for Sustainability",
+    "section": "The Plant-A-PR Event Format",
+    "text": "The Plant-A-PR Event Format\nIntroduction (5-10 minutes) - Overview of the Plant a PR concept and the pre-selected open-source projects for the sprint.\nOpen-Source Crash Course (15-20 minutes) - Guided walkthrough of GitHub fundamentals, including issues, forking repositories, and submitting pull requests.\nContribution Sprint (1-3 hours) - Participants work solo or in small teams to complete and submit as many pull requests as possible.\nConclusion (5 minutes) - Group wrap-up highlighting total pull requests submitted, reflections, and key learnings."
+  },
+  {
+    "objectID": "posts/plant_a_pr/index.html#conclusion",
+    "href": "posts/plant_a_pr/index.html#conclusion",
+    "title": "Plant A PR: Open-Source Sprint for Sustainability",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe Plant-A-PR event format can be used to gather participants interested in the intersection of software and sustainability. Similar to tree planting initiatives, communities such as schools can establish leaderboards to motivate participants."
+  },
+  {
+    "objectID": "posts/plant_a_pr/index.html#references",
+    "href": "posts/plant_a_pr/index.html#references",
+    "title": "Plant A PR: Open-Source Sprint for Sustainability",
+    "section": "References",
+    "text": "References"
+  },
+  {
     "objectID": "posts/ai_not_fix_climate_change/index.html",
     "href": "posts/ai_not_fix_climate_change/index.html",
     "title": "Don’t Wait for AI to “Fix” the Climate Crisis",
@@ -172,6 +200,6 @@
     "href": "index.html",
     "title": "Latest Articles",
     "section": "",
-    "text": "Don’t Wait for AI to “Fix” the Climate Crisis\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nFeb 1, 2026\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nAlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nAug 9, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nPrecision vs. Recall vs. Accuracy: Finally Memorize the Difference\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
+    "text": "Plant A PR: Open-Source Sprint for Sustainability\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nFeb 8, 2026\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nDon’t Wait for AI to “Fix” the Climate Crisis\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nFeb 1, 2026\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nAlphaEarth: A Peek into the Potential of Geospatial Satelitte Embeddings\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nAug 9, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nPrecision vs. Recall vs. Accuracy: Finally Memorize the Difference\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 28, 2025\n\n\nAlice Heiman\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome! Coding for Human and Planetary Health\n\n\n\nArticle\n\n\n\n\n\n\n\n\n\nJul 17, 2025\n\n\nAlice Heiman\n\n\n\n\n\nNo matching items"
   }
 ]
